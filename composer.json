@@ -1,0 +1,44 @@
+{
+  "name": "zhangjf108/php-framework-application",
+  "description": "A application for php-framework",
+  "type": "project",
+  "authors": [
+    {
+      "name": "Zhang Jianfeng",
+      "email": "zhangjianfeng@me.com"
+    }
+  ],
+  "require": {
+    "zhangjf108/php-framework": "dev-master"
+  },
+  "require-dev": {
+
+  },
+  "autoload": {
+    "files": [
+
+    ],
+    "psr-4": {
+      "App\\": "application/modules",
+      "Lib\\": "application/libraries",
+      "Kerisy\\Tests\\": "vendor/zhangjf108/php-framework/tests",
+      "Kerisy\\": "vendor/zhangjf108/php-framework/src"
+    }
+  },
+  "minimum-stability": "stable",
+  "config": {
+    "vendor-dir": "vendor",
+    "secure-http": false
+  },
+  "scripts": {
+    "post-root-package-install": [
+      "php -r \"mkdir('runtime');\""
+    ]
+  },
+  "repositories": {
+    "packagist": {
+      "type": "composer",
+      "url": "https://packagist.laravel-china.org"
+    }
+  }
+}

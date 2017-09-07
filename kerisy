@@ -1,0 +1,29 @@
+#! /usr/bin/env php
+<?php
+set_time_limit(0);
+require __DIR__ . '/vendor/autoload.php';
+
+use Symfony\Component\Console\Application;
+use Kerisy\Console\HttpCommand;
+use Kerisy\Console\WebSocketCommand;
+use Kerisy\Console\ConsoleCommand;
+use Kerisy\Console\RPCCommand;
+
+$app = new Application(Kerisy::getName(), Kerisy::getVersion());
+$app->add(new HttpCommand());
+$app->add(new WebSocketCommand());
+$app->add(new RPCCommand());
+$app->add(new ConsoleCommand());
+$exitCode = $app->run();
+exit($exitCode);
+
+#临时
+/*
+$app = require_once __DIR__ . '/application/bootstrap.php';
+
+$serviceConfig = require_once CONFIG_PATH . 'service.php';
+
+$server = new \Kerisy\Server\Swoole($serviceConfig);
+$server->run();
+*/
+
