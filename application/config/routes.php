@@ -11,7 +11,7 @@ return [
             'api-framework-websocket.ptdev.cn'
         ],
         'routes' => [
-            ['GET', '/', 'core/test/get'],
+            ['GET', '/', 'core/index/index'],
         ]
     ],
 ];
