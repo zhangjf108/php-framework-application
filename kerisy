@@ -16,14 +16,3 @@ $app->add(new RPCCommand());
 $app->add(new ConsoleCommand());
 $exitCode = $app->run();
 exit($exitCode);
-
-#临时
-/*
-$app = require_once __DIR__ . '/application/bootstrap.php';
-
-$serviceConfig = require_once CONFIG_PATH . 'service.php';
-
-$server = new \Kerisy\Server\Swoole($serviceConfig);
-$server->run();
-*/
-
