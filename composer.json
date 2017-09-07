@@ -12,7 +12,7 @@
     "zhangjf108/php-framework": "dev-master"
   },
   "require-dev": {
-
+    "eaglewu/swoole-ide-helper": "dev-master"
   },
   "autoload": {
     "files": [
