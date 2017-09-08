@@ -5,7 +5,7 @@ defined('CONFIG_PATH') || define('CONFIG_PATH', APPLICATION_PATH . 'config/');
 defined('RUNTIME_PATH') || define('RUNTIME_PATH', ROOT_PATH . 'runtime/');
 defined('KERISY_ENV') || define('KERISY_ENV', getenv('KERISY_ENV') ?: 'development');
 defined('KERISY_LANG') || define('KERISY_LANG', getenv('KERISY_LANG') ?: 'zh_cn');
-var_dump(RUNTIME_PATH);
+
 $config = [
     'applicationPath' => APPLICATION_PATH,
     'environment' => KERISY_ENV,
